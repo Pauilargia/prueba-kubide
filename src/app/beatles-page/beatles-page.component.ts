@@ -11,6 +11,7 @@ export class BeatlesPageComponent implements OnInit {
   url: any;
   video: any = {id: 'VJDJs9dumZI'};
   baseUrl: string = 'https://www.youtube.com/embed/';
+  image: string = 'http://www.thebeatles.com/sites/default/files/styles/tile_3_column/public/sticky/logo.jpg?itok=MQmoKorx';
 
   constructor(private sanitizer: DomSanitizer) {
     this.url = this.sanitizer.bypassSecurityTrustResourceUrl(this.baseUrl + this.video.id);
