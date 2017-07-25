@@ -1,23 +1,28 @@
-<h1> The Rolling Stones </h1>
-
-<iframe width="560" height="315" [src]="url" frameborder="0" allowfullscreen></iframe>
-
-<p>
-  When the nascent Rolling Stones began playing gigs around London in 1962,
-  the notion that a rock & roll band would last five years, let alone fifty,
-  was an absurdity. After all, what could possibly be more ephemeral than rock & roll,
-  the latest teenage fad? Besides, other factors made it unlikely that such a
-  momentous occasion would ever come to pass. “I didn’t expect to last until fifty
-  myself, let alone with the Stones,” Keith Richards says with a laugh.
-  “It’s incredible, really. In that sense we’re still living on borrowed time.”
-</p>
-<p>
-  “You have to put yourself back into that time,” Mick Jagger says about those early
-  days when he and Keith and guitarist Brian Jones roomed together and were hustling
-  gigs wherever they could find one. “Popular music wasn’t talked about on any kind
-  of intellectual level. There was no such term as ‘popular culture.’ None of those
-  things existed.”
-</p>
-<img [src]="image" alt="The Rolling Stones">
-
+<h2> The Rolling Stones </h2>
 <button (click)="goHome()"> Home Page </button>
+
+<section class="media">
+  <img [src]="image" alt="The Rolling Stones">
+</section>
+<div class="text">
+  <p>
+    When the nascent Rolling Stones began playing gigs around London in 1962,
+    the notion that a rock & roll band would last five years, let alone fifty,
+    was an absurdity. After all, what could possibly be more ephemeral than rock & roll,
+    the latest teenage fad? Besides, other factors made it unlikely that such a
+    momentous occasion would ever come to pass. “I didn’t expect to last until fifty
+    myself, let alone with the Stones,” Keith Richards says with a laugh.
+    “It’s incredible, really. In that sense we’re still living on borrowed time.”
+  </p>
+  <p>
+    “You have to put yourself back into that time,” Mick Jagger says about those early
+    days when he and Keith and guitarist Brian Jones roomed together and were hustling
+    gigs wherever they could find one. “Popular music wasn’t talked about on any kind
+    of intellectual level. There was no such term as ‘popular culture.’ None of those
+    things existed.”
+  </p>
+</div>
+
+<section class="media">
+  <iframe width="560" height="315" [src]="url" frameborder="0" allowfullscreen></iframe>
+</section>
