@@ -14,6 +14,5 @@ export const routes: Routes = [
   { path: 'bar', component: BarPageComponent },
   { path: 'the-rolling-stones', component: RollingPageComponent },
   { path: 'the-beatles', component: BeatlesPageComponent },
-  { path: 'queen', component: QueenPageComponent },
-  { path: '**', component: HomePageComponent }
+  { path: 'queen', component: QueenPageComponent }
 ];

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {DomSanitizer} from '@angular/platform-browser';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-beatles-page',
@@ -13,11 +14,15 @@ export class BeatlesPageComponent implements OnInit {
   baseUrl: string = 'https://www.youtube.com/embed/';
   image: string = 'http://www.thebeatles.com/sites/default/files/styles/tile_3_column/public/sticky/logo.jpg?itok=MQmoKorx';
 
-  constructor(private sanitizer: DomSanitizer) {
+  constructor(private sanitizer: DomSanitizer, private router: Router) {
     this.url = this.sanitizer.bypassSecurityTrustResourceUrl(this.baseUrl + this.video.id);
   }
 
   ngOnInit() {
+  }
+
+  goHome() {
+    this.router.navigate(['/']);
   }
 
 }

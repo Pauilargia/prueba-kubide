@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {DomSanitizer} from '@angular/platform-browser';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-queen-page',
@@ -13,12 +14,16 @@ export class QueenPageComponent implements OnInit {
   baseUrl: string = 'https://www.youtube.com/embed/';
   image: string = 'http://www.eboca.com/ebocame/wp-content/uploads/2014/11/queen-band-i14-1024x605.jpg';
 
-  constructor(private sanitizer: DomSanitizer) {
+  constructor(private sanitizer: DomSanitizer, private router: Router) {
     this.url = this.sanitizer.bypassSecurityTrustResourceUrl(this.baseUrl + this.video.id);
   }
 
 
   ngOnInit() {
+  }
+
+  goHome() {
+    this.router.navigate(['/']);
   }
 
 }
