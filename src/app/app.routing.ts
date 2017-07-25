@@ -9,7 +9,7 @@ import { QueenPageComponent } from './queen-page/queen-page.component';
 
 
 export const routes: Routes = [
-  { path: '', component: HomePageComponent },
+  { path: '', component: HomePageComponent, pathMatch: 'full' },
   { path: 'foo', component: FooPageComponent },
   { path: 'bar', component: BarPageComponent },
   { path: 'the-rolling-stones', component: RollingPageComponent },
